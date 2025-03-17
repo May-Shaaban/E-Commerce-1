@@ -9,9 +9,10 @@ import { headersInterceptor } from './core/interceptors/headers/headers.intercep
 import { errorsInterceptor } from './core/interceptors/errors/errors.interceptor';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { loadingInterceptor } from './core/interceptors/loading/loading.interceptor';
+import { resErrorInterceptor } from './core/interceptor/res-error.interceptor';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(withEventReplay()), provideHttpClient(withFetch(), withInterceptors([headersInterceptor, errorsInterceptor ,loadingInterceptor])), provideAnimations(), provideToastr(), importProvidersFrom(NgxSpinnerModule)],
+  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(withEventReplay()), provideHttpClient(withFetch(), withInterceptors([headersInterceptor,resErrorInterceptor, errorsInterceptor ,loadingInterceptor])), provideAnimations(), provideToastr(), importProvidersFrom(NgxSpinnerModule)],
 
 
 };

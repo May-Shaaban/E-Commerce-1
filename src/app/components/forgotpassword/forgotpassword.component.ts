@@ -1,7 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AuthService } from '../../core/services/auth/auth.service';
-// import { console } from 'node:inspector';
 import { Router } from '@angular/router';
 
 @Component({
