@@ -34,8 +34,8 @@
             "styles": [
               "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
                "./node_modules/ngx-toastr/toastr.css",
-               "node_modules/ngx-spinner/animations/ball-SCale-multiple.css" ,
-               "node_modules/ngx-spinner/animations/timer.css" ,
+               "./node_modules/ngx-spinner/animations/ball-scale-multiple.css" ,
+               "./node_modules/ngx-spinner/animations/timer.css" ,
               "src/styles.scss"
             ],
             "scripts": [
